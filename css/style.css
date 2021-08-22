@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kaisei Opti', serif;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.calc {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(75px, max-content);
+  margin-top: 2px;
+  /* background: rgba(0, 0, 0, 0.4); */
+  background-image: url(https://im0-tub-ru.yandex.net/i?id=3f7cf695c8bfdaf2a26e3a2581453a1c&ref=rim&n=33&w=120&h=150);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: red 1px solid;
+  border-radius: 10px;
+}
+
+.calc__form {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.calc__input {
+  width: 100%;
+  text-align: right;
+  font-size: 30px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.item,
+#calc {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border: red 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item-history{
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border: red 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  border-radius: 10px;
+}
+
+#calc {
+  grid-column: span 4;
+}
+
+#item1,
+#item3 {
+  grid-column: span 2;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border: red 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  border-radius: 10px;
+}
+
+#item2{
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border: red 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  border-radius: 10px;
+}
+
+#item4{
+  grid-row: span 2;
+
+}
+
+.item:first-child {
+  grid-column: span 4;
+}
